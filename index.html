@@ -3,265 +3,194 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Political Cartoon | Rhetorical Analysis</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Join, or Die | Political Cartoon Analysis</title>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=DM+Sans:wght@400;500;600&display=swap');
 
 :root {
-    --navy: #263846;
-    --gold: #c99a4d;
-    --paper: #fffdf7;
-    --cream: #eee7da;
-    --ink: #302b25;
+  --navy: #263846;
+  --gold: #c99a4d;
+  --paper: #fffdf7;
+  --ink: #302b25;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
+* { box-sizing: border-box; }
 
 body {
-    margin: 0;
-    background: #eee7da;
-    color: var(--ink);
-    font-family: 'DM Sans', Arial, sans-serif;
-    line-height: 1.7;
+  margin: 0;
+  background: #eee7da;
+  color: var(--ink);
+  font-family: 'DM Sans', Arial, sans-serif;
+  line-height: 1.75;
 }
 
 main {
-    max-width: 950px;
-    margin: 30px auto;
-    padding: 0 20px;
+  max-width: 950px;
+  margin: 30px auto;
+  padding: 0 20px;
 }
 
-/* HISTORICAL HEADER */
-
 header {
-    background: linear-gradient(135deg, #192934, #40515b);
-    color: white;
-    text-align: center;
-    padding: 65px 30px;
-    border-bottom: 6px solid var(--gold);
-    border-radius: 6px;
-    box-shadow: 0 12px 30px #0002;
+  background: linear-gradient(135deg, #192934, #40515b);
+  color: white;
+  text-align: center;
+  padding: 65px 30px;
+  border-bottom: 6px solid var(--gold);
+  border-radius: 8px;
+  box-shadow: 0 12px 30px #0002;
 }
 
 .eyebrow {
-    color: #e6c98e;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 12px;
-    font-weight: bold;
+  color: #e6c98e;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 h1 {
-    font-family: 'Libre Baskerville', Georgia, serif;
-    font-size: clamp(32px, 5vw, 52px);
-    line-height: 1.25;
-    margin: 25px 0;
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(30px, 5vw, 48px);
+  line-height: 1.3;
+  margin: 25px 0;
 }
 
-header p {
-    max-width: 620px;
-    margin: auto;
-    color: #e2e5e5;
-}
+header p { color: #e2e5e5; }
 
 .gold-line {
-    width: 90px;
-    height: 3px;
-    background: var(--gold);
-    margin: 25px auto;
+  width: 90px;
+  height: 3px;
+  background: var(--gold);
+  margin: 25px auto;
 }
 
 .tag {
-    display: inline-block;
-    border: 1px solid #ffffff55;
-    padding: 8px 15px;
-    margin-top: 20px;
-    font-size: 12px;
-    letter-spacing: 2px;
+  display: inline-block;
+  border: 1px solid #ffffff55;
+  padding: 8px 15px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  font-size: 12px;
 }
 
-/* SECTIONS */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 25px 0;
+}
+
+nav a {
+  background: var(--navy);
+  color: white;
+  padding: 9px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+nav a:hover { background: #50687b; }
 
 section {
-    background: var(--paper);
-    margin-top: 22px;
-    padding: 35px;
-    border: 1px solid #d9cdbb;
-    border-left: 5px solid var(--gold);
-    border-radius: 6px;
-    box-shadow: 0 5px 18px #00000010;
-    transition: transform 0.2s, box-shadow 0.2s;
+  background: var(--paper);
+  margin-top: 22px;
+  padding: 35px;
+  border: 1px solid #d9cdbb;
+  border-left: 5px solid var(--gold);
+  border-radius: 7px;
+  box-shadow: 0 5px 18px #00000010;
+  transition: transform .2s, box-shadow .2s;
 }
 
 section:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 9px 24px #00000016;
+  transform: translateY(-2px);
+  box-shadow: 0 9px 24px #00000016;
 }
 
 h2 {
-    font-family: 'Libre Baskerville', Georgia, serif;
-    color: var(--navy);
-    font-size: 23px;
-    margin-top: 0;
+  font-family: 'Libre Baskerville', Georgia, serif;
+  color: var(--navy);
+  font-size: 23px;
+  margin-top: 0;
 }
 
-.hint {
-    color: #756e63;
-    font-size: 14px;
+h3 {
+  color: #785b30;
+  font-size: 16px;
+  margin-bottom: 5px;
 }
 
-label {
-    display: block;
-    margin-top: 18px;
-    margin-bottom: 7px;
-    font-weight: 700;
-    font-size: 14px;
-}
+p { margin-top: 8px; }
 
-input, textarea {
-    width: 100%;
-    padding: 14px;
-    border: 1px solid #d4c8b5;
-    border-radius: 5px;
-    background: #fffefa;
-    color: var(--ink);
-    font-family: inherit;
-    font-size: 15px;
+.note {
+  color: #756e63;
+  font-size: 14px;
 }
-
-textarea {
-    min-height: 125px;
-    resize: vertical;
-    line-height: 1.7;
-}
-
-input:focus, textarea:focus {
-    outline: none;
-    border-color: var(--gold);
-    box-shadow: 0 0 0 3px #c99a4d30;
-}
-
-.two-column {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0 20px;
-}
-
-/* CARTOON IMAGE */
 
 .cartoon {
-    text-align: center;
-    background: #f4ecdc;
-    padding: 20px;
-    border: 1px solid #d6c7ac;
-    margin-top: 20px;
+  text-align: center;
+  background: #f4ecdc;
+  padding: 25px;
+  border: 1px solid #d6c7ac;
+  margin: 25px 0;
 }
 
 .cartoon img {
-    width: 100%;
-    max-width: 700px;
-    height: auto;
-    filter: grayscale(100%);
+  display: block;
+  max-width: 100%;
+  max-height: 400px;
+  margin: auto;
+  object-fit: contain;
 }
 
-.image-caption {
-    font-family: Georgia, serif;
-    font-style: italic;
-    color: #716756;
-    font-size: 13px;
+.caption {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 13px;
+  color: #716756;
+  margin-top: 12px;
 }
 
-/* BUTTONS AND LINKS */
-
-button, .source-link {
-    display: inline-block;
-    padding: 14px 22px;
-    background: var(--navy);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-family: inherit;
-    font-size: 14px;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-    transition: 0.2s;
+.quote {
+  border-left: 3px solid var(--gold);
+  background: #f7f0e4;
+  padding: 15px 20px;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 19px;
 }
 
-button:hover, .source-link:hover {
-    background: #466075;
-    transform: translateY(-2px);
+.source-link {
+  display: inline-block;
+  padding: 13px 20px;
+  background: var(--navy);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 12px;
 }
 
-.buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 25px;
+.source-link:hover {
+  background: #50687b;
 }
-
-.secondary {
-    background: #756a59;
-}
-
-#status {
-    text-align: center;
-    color: #756a59;
-    font-size: 13px;
-}
-
-/* FOOTER */
 
 footer {
-    margin-top: 35px;
-    padding: 25px;
-    border-top: 1px solid #cbbfae;
-    text-align: center;
-    color: #756a59;
-    font-family: Georgia, serif;
-    font-size: 13px;
+  margin-top: 35px;
+  padding: 25px;
+  text-align: center;
+  color: #756a59;
+  border-top: 1px solid #cbbfae;
+  font-family: Georgia, serif;
 }
 
 @media (max-width: 650px) {
-    main {
-        padding: 0 12px;
-        margin: 0 auto;
-    }
-
-    header {
-        padding: 45px 20px;
-    }
-
-    section {
-        padding: 24px;
-    }
-
-    .two-column {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media print {
-    body {
-        background: white;
-    }
-
-    section {
-        break-inside: avoid;
-        box-shadow: none;
-    }
-
-    .buttons, #status {
-        display: none;
-    }
+  main { padding: 0 12px; }
+  header { padding: 45px 20px; }
+  section { padding: 24px; }
 }
 </style>
 </head>
@@ -270,331 +199,277 @@ footer {
 <main>
 
 <header>
-    <div class="eyebrow">
-        History · Persuasion · Visual Rhetoric
-    </div>
+  <div class="eyebrow">
+    History · Persuasion · Visual Rhetoric
+  </div>
 
-    <h1>Political Cartoon<br>Rhetorical Analysis</h1>
+  <h1>Political Cartoon<br>Rhetorical Analysis</h1>
 
-    <div class="gold-line"></div>
+  <div class="gold-line"></div>
 
-    <p>
-        An examination of Benjamin Franklin's
-        <em>Join, or Die</em> cartoon through
-        Ethos, Pathos, Logos, Kairos, and
-        the Rhetorical Situation.
-    </p>
+  <p>
+    Exploring Benjamin Franklin's
+    <em>Join, or Die</em> through Ethos,
+    Pathos, Logos, Kairos, and the
+    Rhetorical Situation.
+  </p>
 
-    <div class="tag">JOIN, OR DIE — 1754</div>
+  <div class="tag">JOIN, OR DIE — 1754</div>
 </header>
 
-<form id="analysisForm">
+<nav>
+  <a href="#cartoon">Cartoon</a>
+  <a href="#ethos">Ethos</a>
+  <a href="#pathos">Pathos</a>
+  <a href="#logos">Logos</a>
+  <a href="#kairos">Kairos</a>
+  <a href="#situation">Rhetorical Situation</a>
+  <a href="#overall">Overall Analysis</a>
+  <a href="#sources">Sources</a>
+</nav>
 
-<!-- CARTOON INFORMATION -->
+<section id="cartoon">
+  <h2>01. Political Cartoon Information</h2>
 
-<section>
-    <h2>01. Cartoon Information</h2>
+  <p><strong>Title:</strong> Join, or Die</p>
+  <p><strong>Cartoonist:</strong> Benjamin Franklin</p>
+  <p><strong>Date:</strong> May 9, 1754</p>
+  <p><strong>Publication:</strong> The Pennsylvania Gazette</p>
 
-    <div class="two-column">
-        <div>
-            <label>Student Name</label>
-            <input id="student" type="text"
-                   placeholder="Your name">
-        </div>
+  <div class="cartoon">
+    <img src="join-or-die.jpg"
+         alt="Benjamin Franklin's Join or Die cartoon showing a snake divided into eight pieces">
 
-        <div>
-            <label>Course / Instructor</label>
-            <input id="course" type="text"
-                   placeholder="Class information">
-        </div>
-
-        <div>
-            <label>Cartoon Title</label>
-            <input id="title" type="text"
-                   value="Join, or Die">
-        </div>
-
-        <div>
-            <label>Cartoonist</label>
-            <input id="artist" type="text"
-                   value="Benjamin Franklin">
-        </div>
-
-        <div>
-            <label>Publication Date</label>
-            <input id="date" type="text"
-                   value="May 9, 1754">
-        </div>
-
-        <div>
-            <label>Original Publication</label>
-            <input id="publication" type="text"
-                   value="The Pennsylvania Gazette">
-        </div>
-    </div>
-
-    <div class="cartoon">
-        <img src="join-or-die.jpg"
-             alt="Benjamin Franklin Join or Die cartoon">
-        <p class="image-caption">
-            Benjamin Franklin, Join, or Die (1754)
-        </p>
-    </div>
-
-    <label>Visual Description</label>
-    <textarea id="description"
-      placeholder="Describe what is shown in the cartoon.">
-    </textarea>
-</section>
-
-<!-- ETHOS -->
-
-<section>
-    <h2>02. Ethos — Credibility</h2>
-
-    <p class="hint">
-        How does the cartoon establish authority
-        or credibility? Consider the cartoonist's
-        reputation and historical position.
+    <p class="caption">
+      Benjamin Franklin, Join, or Die (1754)
     </p>
+  </div>
 
-    <textarea id="ethos"
-      placeholder="Explain how ethos is used..."></textarea>
+  <h3>Visual Description</h3>
+
+  <p>
+    The cartoon shows a snake cut into eight
+    separate pieces, with each piece labeled
+    with the initials of different American
+    colonies or groups of colonies. Underneath
+    the snake are the bold words "JOIN, or DIE."
+    The snake represents the colonies being
+    divided instead of working together.
+    The black-and-white design is simple but
+    sends a powerful message. By showing the
+    snake separated into pieces, Benjamin
+    Franklin suggests that the colonies are
+    weaker when divided and need to unite
+    to survive.
+  </p>
 </section>
 
-<!-- PATHOS -->
+<section id="ethos">
+  <h2>02. Ethos — Credibility</h2>
 
-<section>
-    <h2>03. Pathos — Emotion</h2>
+  <p class="note">
+    How does the cartoon establish credibility
+    and authority?
+  </p>
 
-    <p class="hint">
-        What emotions does the cartoon create?
-        Consider fear, urgency, patriotism,
-        or concern.
-    </p>
-
-    <textarea id="pathos"
-      placeholder="Explain how pathos is used..."></textarea>
+  <p>
+    Benjamin Franklin uses ethos through his
+    reputation as a respected writer, printer,
+    and political thinker. His involvement in
+    colonial affairs helped give his message
+    credibility. Publishing the cartoon in
+    The Pennsylvania Gazette also allowed
+    him to reach readers who were familiar
+    with his work. Franklin's knowledge of
+    the political situation made his warning
+    about colonial unity more convincing.
+  </p>
 </section>
 
-<!-- LOGOS -->
+<section id="pathos">
+  <h2>03. Pathos — Emotion</h2>
 
-<section>
-    <h2>04. Logos — Logic</h2>
+  <p class="note">
+    How does the cartoon appeal to the
+    audience's emotions?
+  </p>
 
-    <p class="hint">
-        What logical argument does the cartoon
-        communicate? Consider cause and effect,
-        symbolism, and reasoning.
-    </p>
+  <div class="quote">"JOIN, or DIE."</div>
 
-    <textarea id="logos"
-      placeholder="Explain how logos is used..."></textarea>
+  <p>
+    The cartoon uses pathos by creating fear
+    and urgency. The words "Join, or Die"
+    make the situation seem serious and
+    suggest that the colonies could face
+    dangerous consequences if they remain
+    divided. The image of the snake cut into
+    pieces also creates a sense of weakness
+    and vulnerability. Franklin wanted the
+    colonists to feel concerned about their
+    future and recognize the importance of
+    working together.
+  </p>
 </section>
 
-<!-- KAIROS -->
+<section id="logos">
+  <h2>04. Logos — Logic</h2>
 
-<section>
-    <h2>05. Kairos — Timing</h2>
+  <p class="note">
+    What logical argument does the cartoon
+    communicate?
+  </p>
 
-    <p class="hint">
-        Why was the cartoon important when
-        it was published in 1754?
-    </p>
-
-    <textarea id="kairos"
-      placeholder="Explain the historical timing..."></textarea>
+  <p>
+    Franklin uses logos by presenting a simple
+    argument that unity creates strength.
+    The snake represents the colonies, and
+    its separated pieces symbolize how weak
+    they are when acting independently.
+    The reasoning is that if the colonies
+    cooperate, they will have a better chance
+    of defending themselves against outside
+    threats. The cartoon uses a clear
+    cause-and-effect message to show why
+    cooperation is necessary.
+  </p>
 </section>
 
-<!-- RHETORICAL SITUATION -->
+<section id="kairos">
+  <h2>05. Kairos — Timing</h2>
 
-<section>
-    <h2>06. Rhetorical Situation</h2>
+  <p class="note">
+    Why was this message important when
+    it was published?
+  </p>
 
-    <label>Speaker — Who created the message?</label>
-    <textarea id="speaker"></textarea>
-
-    <label>Audience — Who was the cartoon meant for?</label>
-    <textarea id="audience"></textarea>
-
-    <label>Purpose — What was the cartoonist's goal?</label>
-    <textarea id="purpose"></textarea>
-
-    <label>Context — What historical events inspired it?</label>
-    <textarea id="context"></textarea>
-
-    <label>Central Message — What is the main argument?</label>
-    <textarea id="message"></textarea>
+  <p>
+    The cartoon was published in 1754,
+    during growing conflict between Britain
+    and France in North America. The colonies
+    were facing threats connected to the
+    French and Indian War, making cooperation
+    especially important. Franklin released
+    the cartoon at a time when colonial
+    leaders were discussing ways to unite
+    and improve their defenses. This timing
+    made his message more relevant because
+    the colonies had a reason to consider
+    working together.
+  </p>
 </section>
 
-<!-- OVERALL ANALYSIS -->
+<section id="situation">
+  <h2>06. Rhetorical Situation</h2>
 
-<section>
-    <h2>07. Overall Analysis</h2>
+  <h3>Speaker — Who created the message?</h3>
 
-    <p class="hint">
-        Bring your observations together.
-        Is the cartoon persuasive?
-        Which rhetorical appeal is strongest,
-        and why?
-    </p>
+  <p>
+    Benjamin Franklin created the Join, or Die
+    political cartoon, which was published in
+    The Pennsylvania Gazette in 1754.
+  </p>
 
-    <textarea id="conclusion"
-      placeholder="Write your overall analysis here...">
-    </textarea>
+  <h3>Audience — Who is the cartoon meant for?</h3>
+
+  <p>
+    The cartoon was aimed at American
+    colonists, especially those in the
+    British colonies who needed to work
+    together.
+  </p>
+
+  <h3>Purpose — What does the cartoonist want to accomplish?</h3>
+
+  <p>
+    Franklin wanted to encourage the colonies
+    to unite instead of remaining divided.
+    He believed cooperation would make them
+    stronger against outside threats.
+  </p>
+
+  <h3>Context — What issue or event inspired it?</h3>
+
+  <p>
+    The cartoon was published in 1754 during
+    growing tensions between Britain and
+    France in North America, around the
+    beginning of the French and Indian War.
+    Franklin was promoting colonial unity
+    through the Albany Plan of Union.
+  </p>
+
+  <h3>Central Message — What is the cartoon arguing?</h3>
+
+  <p>
+    The cartoon argues that the colonies must
+    work together to survive. The separated
+    snake represents the divided colonies,
+    while the words "Join, or Die" warn
+    about the dangers of remaining separated.
+  </p>
 </section>
 
-<!-- HISTORICAL SOURCE -->
+<section id="overall">
+  <h2>07. Overall Analysis</h2>
 
-<section>
-    <h2>08. Source & Historical Background</h2>
+  <p>
+    I think the cartoon is persuasive because
+    it delivers a strong message using a
+    simple image and very few words.
+    The snake being separated into pieces
+    shows how weak the colonies are when
+    they are divided.
+  </p>
 
-    <p>
-        Benjamin Franklin published
-        <em>Join, or Die</em> in 1754.
-        The cartoon encouraged greater unity
-        among the British colonies during
-        growing conflict with France
-        in North America.
-    </p>
+  <p>
+    The strongest rhetorical appeal is pathos
+    because the words "Join, or Die" create
+    fear and urgency. This makes the audience
+    feel that unity is necessary for survival.
+    The cartoon also uses kairos because it
+    was published at a time when the colonies
+    faced growing threats from France.
+  </p>
 
-    <p>
-        The Library of Congress provides
-        additional historical background
-        about Franklin and the cartoon.
-    </p>
-
-    <a class="source-link"
-       href="https://www.loc.gov/exhibits/franklin/franklin-cause.html"
-       target="_blank"
-       rel="noopener noreferrer">
-       Explore the Original Cartoon & Historical Background
-    </a>
+  <p>
+    Overall, Franklin effectively uses
+    symbolism and emotion to convince the
+    colonies that they are stronger together.
+  </p>
 </section>
 
-</form>
+<section id="sources">
+  <h2>08. Source & Historical Background</h2>
 
-<!-- INTERACTIVE BUTTONS -->
+  <p>
+    Benjamin Franklin published Join, or Die
+    in 1754. The cartoon encouraged greater
+    unity among the British colonies during
+    growing conflict with France in North
+    America.
+  </p>
 
-<div class="buttons">
-    <button type="button" onclick="downloadHTML()">
-        Download Completed HTML
-    </button>
+  <p>
+    The Library of Congress provides
+    additional historical background about
+    Franklin, colonial politics, and the
+    importance of unity during this period.
+  </p>
 
-    <button type="button" class="secondary"
-            onclick="window.print()">
-        Print / Save as PDF
-    </button>
-
-    <button type="button" class="secondary"
-            onclick="clearAnswers()">
-        Clear Answers
-    </button>
-</div>
-
-<p id="status">
-    Your answers are automatically saved in this browser.
-</p>
+  <a class="source-link"
+     href="https://www.loc.gov/exhibits/franklin/franklin-cause.html"
+     target="_blank"
+     rel="noopener noreferrer">
+    View Cartoon & Historical Background
+  </a>
+</section>
 
 <footer>
-    Political Cartoon Analysis ·
-    Benjamin Franklin · 1754
+  Political Cartoon Rhetorical Analysis
+  <br>
+  Benjamin Franklin · Join, or Die · 1754
 </footer>
 
 </main>
-
-<script>
-const fields = document.querySelectorAll(
-    '#analysisForm input, #analysisForm textarea'
-);
-
-const storageKey = "cartoon-analysis-vintage";
-
-const defaults = {};
-fields.forEach(field => {
-    defaults[field.id] = field.value;
-});
-
-try {
-    const saved = JSON.parse(
-        localStorage.getItem(storageKey) || '{}'
-    );
-
-    fields.forEach(field => {
-        if (saved[field.id] !== undefined) {
-            field.value = saved[field.id];
-        }
-    });
-} catch (error) {
-    console.log("No saved answers found.");
-}
-
-function saveAnswers() {
-    const answers = {};
-
-    fields.forEach(field => {
-        answers[field.id] = field.value;
-    });
-
-    try {
-        localStorage.setItem(
-            storageKey,
-            JSON.stringify(answers)
-        );
-
-        document.getElementById('status').textContent =
-            "Your answers have been saved.";
-    } catch (error) {
-        document.getElementById('status').textContent =
-            "Use Download Completed HTML to save your work.";
-    }
-}
-
-fields.forEach(field => {
-    field.addEventListener('input', saveAnswers);
-});
-
-function downloadHTML() {
-    const copy = document.documentElement.cloneNode(true);
-
-    fields.forEach(field => {
-        const target = copy.querySelector('#' + field.id);
-
-        if (field.tagName === 'TEXTAREA') {
-            target.textContent = field.value;
-        } else {
-            target.setAttribute('value', field.value);
-        }
-    });
-
-    const html = '<!DOCTYPE html>\n' + copy.outerHTML;
-
-    const blob = new Blob([html], {
-        type: 'text/html;charset=utf-8'
-    });
-
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-
-    link.href = url;
-    link.download = 'index.html';
-    link.click();
-
-    setTimeout(() => URL.revokeObjectURL(url), 2000);
-}
-
-function clearAnswers() {
-    if (!confirm("Clear your written answers?")) {
-        return;
-    }
-
-    fields.forEach(field => {
-        field.value = defaults[field.id];
-    });
-
-    saveAnswers();
-}
-</script>
-
 </body>
 </html>
